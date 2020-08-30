@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Potto Sales</string>
+    <string name="content_description_empty">No content description.</string>
+    <string name="internet_connection_error">Internet connection error.</string>
+</resources>

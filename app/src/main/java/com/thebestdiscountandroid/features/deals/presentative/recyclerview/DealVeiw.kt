@@ -1,0 +1,3 @@
+package com.thebestdiscountandroid.features.deals.presentative.recyclerview
+
+abstract class DealView

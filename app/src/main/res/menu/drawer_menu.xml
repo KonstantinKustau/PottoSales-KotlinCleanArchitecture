@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/itemBuffer"
+            android:icon="@drawable/ic_money_24"
+            android:title="@string/buffer" />
+        <item
+            android:id="@+id/itemSettings"
+            android:icon="@drawable/ic_settings_24"
+            android:title="@string/settings" />
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/itemFaq"
+            android:icon="@drawable/ic_help_24"
+            android:title="@string/faq" />
+        <item
+            android:id="@+id/itemInviteFriends"
+            android:icon="@drawable/ic_invite_friend_24"
+            android:title="@string/invite_friends" />
+    </group>
+
+</menu>

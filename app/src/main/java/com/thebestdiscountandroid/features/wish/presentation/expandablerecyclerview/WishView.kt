@@ -1,0 +1,3 @@
+package com.thebestdiscountandroid.features.wish.presentation.expandablerecyclerview
+
+abstract class WishView

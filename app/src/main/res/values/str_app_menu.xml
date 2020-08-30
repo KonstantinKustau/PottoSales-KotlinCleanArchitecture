@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="edit_name">Edit name</string>
+    <string name="log_out">Log out</string>
+    <string name="search">Search</string>
+    <string name="transfer">Transfer</string>
+    <string name="share">Share</string>a
+    <string name="delete">Delete</string>
+    <string name="limit">Set limit</string>
+    <string name="done">Done</string>
+    <string name="buffer">Buffer</string>
+    <string name="faq">FAQ</string>
+    <string name="invite_friends">Invite Friends</string>
+</resources>

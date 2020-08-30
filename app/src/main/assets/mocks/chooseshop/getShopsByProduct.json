@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Amazon",
+    "productPrice": 200,
+    "discountPercentage": 20,
+    "numberOfStars": 4
+  },
+  {
+    "name": "Ebay",
+    "productPrice": 350,
+    "discountPercentage": 25,
+    "numberOfStars": 2
+  },
+  {
+    "name": "Etsy",
+    "productPrice": 280,
+    "discountPercentage": 15,
+    "numberOfStars": 3
+  },
+  {
+    "name": "Walmart",
+    "productPrice": 650,
+    "discountPercentage": 14,
+    "numberOfStars": 5
+  },
+  {
+    "name": "Apple",
+    "productPrice": 140,
+    "discountPercentage": 16,
+    "numberOfStars": 3
+  },
+  {
+    "name": "BestBuy",
+    "productPrice": 685,
+    "discountPercentage": 26,
+    "numberOfStars": 2
+  },
+  {
+    "name": "H&M",
+    "productPrice": 85,
+    "discountPercentage": 30,
+    "numberOfStars": 1
+  },
+  {
+    "name": "Dr. Martens",
+    "productPrice": 85,
+    "discountPercentage": 40,
+    "numberOfStars": 5
+  }
+]

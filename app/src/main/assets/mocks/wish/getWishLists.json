@@ -1,0 +1,169 @@
+[
+  {
+    "id": 1,
+    "name": "Clothes 1",
+    "items": [
+      {
+        "id": 0,
+        "name": "Clothes 1",
+        "image": 0,
+        "currentPriceInUSD": 100.53,
+        "maxPurchasePriceInUSD": 98.34
+      },
+      {
+        "id": 1,
+        "name": "Clothes 2",
+        "image": 0,
+        "currentPriceInUSD": 200.53,
+        "maxPurchasePriceInUSD": 198.34
+      },
+      {
+        "id": 2,
+        "name": "Clothes 3",
+        "image": 0,
+        "currentPriceInUSD": 259.48,
+        "maxPurchasePriceInUSD": 149.34
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Digital",
+    "items": [
+      {
+        "id": 3,
+        "name": "iPhone X",
+        "image": 0,
+        "currentPriceInUSD": 100.53,
+        "maxPurchasePriceInUSD": 98.34
+      },
+      {
+        "id": 4,
+        "name": "iPhone 7",
+        "image": 0,
+        "currentPriceInUSD": 200.53,
+        "maxPurchasePriceInUSD": 198.34
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Sport 2",
+    "items": [
+      {
+        "id": 5,
+        "name": "Sport 2",
+        "image": 0,
+        "currentPriceInUSD": 100.53,
+        "maxPurchasePriceInUSD": 98.34
+      },
+      {
+        "id": 6,
+        "name": "Sport 3",
+        "image": 0,
+        "currentPriceInUSD": 200.53,
+        "maxPurchasePriceInUSD": 198.34
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Sport 3",
+    "items": [
+      {
+        "id": 7,
+        "name": "Sport 4",
+        "image": 0,
+        "currentPriceInUSD": 100.53,
+        "maxPurchasePriceInUSD": 98.34
+      },
+      {
+        "id": 8,
+        "name": "Sport 5",
+        "image": 0,
+        "currentPriceInUSD": 200.53,
+        "maxPurchasePriceInUSD": 198.34
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Sport 4",
+    "items": [
+      {
+        "id": 9,
+        "name": "Sport 6",
+        "image": 0,
+        "currentPriceInUSD": 100.53,
+        "maxPurchasePriceInUSD": 98.34
+      },
+      {
+        "id": 10,
+        "name": "Sport 7",
+        "image": 0,
+        "currentPriceInUSD": 200.53,
+        "maxPurchasePriceInUSD": 198.34
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Sport 5",
+    "items": [
+      {
+        "id": 11,
+        "name": "Sport 8",
+        "image": 0,
+        "currentPriceInUSD": 100.53,
+        "maxPurchasePriceInUSD": 98.34
+      },
+      {
+        "id": 12,
+        "name": "Sport 9",
+        "image": 0,
+        "currentPriceInUSD": 200.53,
+        "maxPurchasePriceInUSD": 198.34
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Sport 6",
+    "items": [
+      {
+        "id": 13,
+        "name": "Sport 10",
+        "image": 0,
+        "currentPriceInUSD": 100.53,
+        "maxPurchasePriceInUSD": 98.34
+      },
+      {
+        "id": 14,
+        "name": "Sport 11",
+        "image": 0,
+        "currentPriceInUSD": 200.53,
+        "maxPurchasePriceInUSD": 198.34
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Sport 7",
+    "items": [
+      {
+        "id": 15,
+        "name": "Sport 12",
+        "image": 0,
+        "currentPriceInUSD": 100.53,
+        "maxPurchasePriceInUSD": 98.34
+      },
+      {
+        "id": 16,
+        "name": "Sport 13",
+        "image": 0,
+        "currentPriceInUSD": 200.53,
+        "maxPurchasePriceInUSD": 198.34
+      }
+    ]
+  }
+]

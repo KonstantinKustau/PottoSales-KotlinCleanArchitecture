@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionEditName"
+        android:icon="@drawable/ic_edit_24"
+        android:orderInCategory="100"
+        android:title="@string/edit_name"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/actionLogout"
+        android:icon="@drawable/ic_exit_24"
+        android:orderInCategory="200"
+        android:title="@string/log_out"
+        app:showAsAction="always" />
+
+</menu>

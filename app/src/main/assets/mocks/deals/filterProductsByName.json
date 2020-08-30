@@ -1,0 +1,188 @@
+[
+  {
+    "name": "iPhone X",
+    "productPrice": 700,
+    "productImage": "image",
+    "shopName": "Apple"
+  },
+  {
+    "name": "iPhone X",
+    "productPrice": 600,
+    "productImage": "image",
+    "shopName": "Amazon"
+  },
+  {
+    "name": "iPhone X",
+    "productPrice": 650,
+    "productImage": "image",
+    "shopName": "BestBuy"
+  },
+  {
+    "name": "iPhone X",
+    "productPrice": 708,
+    "productImage": "image",
+    "shopName": "Walmart"
+  },
+  {
+    "name": "iPhone X",
+    "productPrice": 525,
+    "productImage": "image",
+    "shopName": "Ebay"
+  },
+  {
+    "name": "HP ProBook 4700x",
+    "productPrice": 1100,
+    "productImage": "image",
+    "shopName": "Ebay"
+  },
+  {
+    "name": "HP ProBook 4700x",
+    "productPrice": 1000,
+    "productImage": "image",
+    "shopName": "Walmart"
+  },
+  {
+    "name": "Dr. Martens 1460 Navy",
+    "productPrice": 250.12,
+    "productImage": "image",
+    "shopName": "Walmart"
+  },
+  {
+    "name": "Dr. Martens 1460 Navy",
+    "productPrice": 260,
+    "productImage": "image",
+    "shopName": "Ebay"
+  },
+  {
+    "name": "Dr. Martens 1460 Navy",
+    "productPrice": 270.12954,
+    "productImage": "image",
+    "shopName": "Walmart"
+  },
+  {
+    "name": "Dr. Martens 1460 Navy",
+    "productPrice": 290.546549845194654548498456,
+    "productImage": "image",
+    "shopName": "Dr. Martens"
+  },
+  {
+    "name": "Dr. Martens 1460 Navy",
+    "productPrice": 240,
+    "productImage": "image",
+    "shopName": "Etsy"
+  },
+  {
+    "name": "Dr. Martens 1460 Navy",
+    "productPrice": 245,
+    "productImage": "image",
+    "shopName": "H&M"
+  },
+  {
+    "name": "Dr. Martens 1460 Navy",
+    "productPrice": 232,
+    "productImage": "image",
+    "shopName": "BestBuy"
+  },
+  {
+    "name": "T-Strap Sandals, Leather Sandals",
+    "productPrice": 56.47,
+    "productImage": "image",
+    "shopName": "Amazon"
+  },
+  {
+    "name": "T-Strap Sandals, Leather Sandals",
+    "productPrice": 59.47,
+    "productImage": "image",
+    "shopName": "Walmart"
+  },
+  {
+    "name": "iPhone 7",
+    "productPrice": 345,
+    "productImage": "image",
+    "shopName": "BestBuy"
+  },
+  {
+    "name": "iPhone 7",
+    "productPrice": 360.7,
+    "productImage": "image",
+    "shopName": "Amazon"
+  },
+  {
+    "name": "iPhone 7",
+    "productPrice": 312,
+    "productImage": "image",
+    "shopName": "Etsy"
+  },
+  {
+    "name": "Patterned Dress new arrival",
+    "productPrice": 17.99,
+    "productImage": "image",
+    "shopName": "Etsy"
+  },
+  {
+    "name": "Patterned Dress new arrival",
+    "productPrice": 20.99,
+    "productImage": "image",
+    "shopName": "H&M"
+  },
+  {
+    "name": "Patterned Dress new arrival",
+    "productPrice": 21.58,
+    "productImage": "image",
+    "shopName": "BestBuy"
+  },
+  {
+    "name": "Jeans x340 Lee",
+    "productPrice": 158.5,
+    "productImage": "image",
+    "shopName": "Etsy"
+  },
+  {
+    "name": "Jeans x340 Lee",
+    "productPrice": 128,
+    "productImage": "image",
+    "shopName": "BestBuy"
+  },
+  {
+    "name": "Jeans x340 Lee",
+    "productPrice": 113,
+    "productImage": "image",
+    "shopName": "H&M"
+  },
+  {
+    "name": "Jeans x340 Lee",
+    "productPrice": 180,
+    "productImage": "image",
+    "shopName": "Amazon"
+  },
+  {
+    "name": "Jeans x360 Lee",
+    "productPrice": 154.56,
+    "productImage": "image",
+    "shopName": "BestBuy"
+  },
+  {
+    "name": "Jeans x360 Lee",
+    "productPrice": 147,
+    "productImage": "image",
+    "shopName": "Amazon"
+  },
+  {
+    "name": "Jeans x360 Lee",
+    "productPrice": 110.2,
+    "productImage": "image",
+    "shopName": "Walmart"
+  },
+  {
+    "name": "Jeans x360 Lee",
+    "productPrice": 99.99,
+    "productImage": "image",
+    "shopName": "Etsy"
+  },
+  {
+    "name": "Jeans x360 Lee",
+    "productPrice": 158.9,
+    "productImage": "image",
+    "shopName": "H&M"
+  }
+]

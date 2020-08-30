@@ -1,0 +1,50 @@
+[
+  {
+    "name": "iPhone X",
+    "productPrice": 700,
+    "productImage": "image",
+    "shopName": "Apple"
+  },
+  {
+    "name": "HP ProBook 4700x",
+    "productPrice": 1100,
+    "productImage": "image",
+    "shopName": "Ebay"
+  },
+  {
+    "name": "Dr. Martens 1460 Navy",
+    "productPrice": 250.12,
+    "productImage": "image",
+    "shopName": "Walmart"
+  },
+  {
+    "name": "T-Strap Sandals, Leather Sandals",
+    "productPrice": 56.47,
+    "productImage": "image",
+    "shopName": "Etsy"
+  },
+  {
+    "name": "iPhone 7",
+    "productPrice": 358.59,
+    "productImage": "image",
+    "shopName": "BestBuy"
+  },
+  {
+    "name": "Patterned Dress new arrival",
+    "productPrice": 17.99,
+    "productImage": "image",
+    "shopName": "H&M"
+  },
+  {
+    "name": "Jeans x340 Lee",
+    "productPrice": 158.5,
+    "productImage": "image",
+    "shopName": "BestBuy"
+  },
+  {
+    "name": "Jeans x360 Lee",
+    "productPrice": 147.28,
+    "productImage": "image",
+    "shopName": "BestBuy"
+  }
+]

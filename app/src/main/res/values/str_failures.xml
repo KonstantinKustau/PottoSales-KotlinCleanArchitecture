@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="failure_action_refresh">Refresh</string>
+    <string name="failure_network_connection">No Network Connection.</string>
+    <string name="failure_server_error">Server Error</string>
+    <string name="failure_wish_list_unavailable">Wish Lists Unavailable</string>
+    <string name="failure_loading_limit_error">Loading Limit Error</string>
+</resources>
