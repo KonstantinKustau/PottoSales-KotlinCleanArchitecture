@@ -1,8 +1,6 @@
 package com.thebestdiscountandroid.features.wish.data
 
 import com.thebestdiscountandroid.features.wish.domain.WishListCategory
-import com.thebestdiscountandroid.features.wish.domain.WishListCategoryEntity
-import com.thebestdiscountandroid.features.wish.domain.WishListUpdateEntity
 import retrofit2.Call
 import retrofit2.Retrofit
 import javax.inject.Inject
@@ -20,5 +18,5 @@ class WishListsService
         userId: Int,
         updateType: String,
         updateData: List<WishListCategory>
-    ): Call<WishListUpdateEntity> = wishListsApi.updateWishLists(userId, updateType, updateData)
+    ): Call<WishListUpdate> = wishListsApi.updateWishLists(userId, updateType, updateData)
 }

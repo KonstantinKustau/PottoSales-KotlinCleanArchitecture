@@ -4,8 +4,8 @@ import androidx.lifecycle.MutableLiveData
 import com.thebestdiscountandroid.core.platform.BaseViewModel
 import com.thebestdiscountandroid.features.chooseshop.domain.GetLimitsOnUser
 import com.thebestdiscountandroid.features.chooseshop.domain.GetShopsByProduct
-import com.thebestdiscountandroid.features.chooseshop.domain.ProductLimit
-import com.thebestdiscountandroid.features.chooseshop.domain.Shop
+import com.thebestdiscountandroid.features.chooseshop.domain.ProductLimitEntity
+import com.thebestdiscountandroid.features.chooseshop.domain.ShopEntity
 import com.thebestdiscountandroid.features.chooseshop.presentative.recyclerview.ShopHeaderView
 import com.thebestdiscountandroid.features.chooseshop.presentative.recyclerview.ShopItemView
 import com.thebestdiscountandroid.features.chooseshop.presentative.recyclerview.ShopView
@@ -19,7 +19,7 @@ class ChooseShopViewModel
 
     var shops: MutableLiveData<List<ShopView>> = MutableLiveData()
 
-    var limit: MutableLiveData<ProductLimit> = MutableLiveData()
+    var limit: MutableLiveData<ProductLimitEntity> = MutableLiveData()
 
     fun loadShops(productId: Int) {
         getShopsByProduct(GetShopsByProduct.Params(productId)) { it ->
@@ -37,7 +37,7 @@ class ChooseShopViewModel
         }
     }
 
-    private fun handleShops(shops: List<Shop>) {
+    private fun handleShops(shops: List<ShopEntity>) {
         val shopsAdapterList: ArrayList<ShopView> = arrayListOf()
         shopsAdapterList.add(ShopHeaderView(null))
         shops.map {
@@ -54,7 +54,7 @@ class ChooseShopViewModel
         this.shops.value = shopsAdapterList
     }
 
-    private fun handleLimits(limits: List<ProductLimit>, productId: Int) {
+    private fun handleLimits(limits: List<ProductLimitEntity>, productId: Int) {
         limits.map {
             if (it.id == productId) {
                 this.limit.value = it

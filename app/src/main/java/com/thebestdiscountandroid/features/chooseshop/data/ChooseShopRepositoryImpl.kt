@@ -5,8 +5,8 @@ import com.thebestdiscountandroid.core.functional.Either
 import com.thebestdiscountandroid.core.platform.BaseNetwork
 import com.thebestdiscountandroid.core.platform.NetworkHandler
 import com.thebestdiscountandroid.features.chooseshop.domain.ChooseShopRepository
-import com.thebestdiscountandroid.features.chooseshop.domain.ProductLimit
-import com.thebestdiscountandroid.features.chooseshop.domain.Shop
+import com.thebestdiscountandroid.features.chooseshop.domain.ProductLimitEntity
+import com.thebestdiscountandroid.features.chooseshop.domain.ShopEntity
 import javax.inject.Inject
 
 class ChooseShopRepositoryImpl
@@ -15,7 +15,7 @@ class ChooseShopRepositoryImpl
     private val service: ChooseShopService
 ) : ChooseShopRepository, BaseNetwork() {
 
-    override fun getShopsByProduct(productId: Int): Either<Failure, List<Shop>> {
+    override fun getShopsByProduct(productId: Int): Either<Failure, List<ShopEntity>> {
         return when (networkHandler.isConnected) {
             true -> request(
                 service.getShopsByProduct(productId),
@@ -45,7 +45,7 @@ class ChooseShopRepositoryImpl
         }
     }
 
-    override fun getLimitsOnUser(userId: Int): Either<Failure, List<ProductLimit>> {
+    override fun getLimitsOnUser(userId: Int): Either<Failure, List<ProductLimitEntity>> {
         return when (networkHandler.isConnected) {
             true -> request(
                 service.getLimitsOnUser(userId),

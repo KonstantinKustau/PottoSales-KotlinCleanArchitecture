@@ -1,6 +1,5 @@
 package com.thebestdiscountandroid.features.deals.data
 
-import com.thebestdiscountandroid.features.deals.domain.DealEntity
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -16,11 +15,11 @@ internal interface DealsApi {
     @GET(GET_TOP_DEALS)
     fun getTopDeals(
         @Query(PARAM_USER_ID) userId: Int
-    ): Call<List<DealEntity>>
+    ): Call<List<Deal>>
 
     @GET(FILTER_PRODUCTS_BY_NAME)
     fun filterProductByName(
         @Query(PARAM_USER_ID) userId: Int,
         @Query(PARAM_PRODUCT_NAME) productName: String
-    ): Call<List<DealEntity>>
+    ): Call<List<Deal>>
 }

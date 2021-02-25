@@ -1,6 +1,5 @@
 package com.thebestdiscountandroid.features.settings.data
 
-import com.thebestdiscountandroid.features.settings.domain.SettingsUpdateEntity
 import com.thebestdiscountandroid.features.settings.domain.UserLocalProperties
 import retrofit2.Call
 import retrofit2.http.POST
@@ -24,5 +23,5 @@ internal interface SettingsApi {
     fun updateUserProperties(
         @Query(PARAM_USER_ID) userId: Int,
         @Query(PARAM_USER_NEW_PROPERTIES) userLocalProperties: UserLocalProperties
-    ): Call<SettingsUpdateEntity>
+    ): Call<SettingsUpdate>
 }

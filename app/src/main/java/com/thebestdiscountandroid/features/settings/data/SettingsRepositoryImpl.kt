@@ -5,7 +5,6 @@ import com.thebestdiscountandroid.core.functional.Either
 import com.thebestdiscountandroid.core.platform.BaseNetwork
 import com.thebestdiscountandroid.core.platform.NetworkHandler
 import com.thebestdiscountandroid.features.settings.domain.SettingsRepository
-import com.thebestdiscountandroid.features.settings.domain.SettingsUpdate
 import com.thebestdiscountandroid.features.settings.domain.SettingsUpdateEntity
 import com.thebestdiscountandroid.features.settings.domain.UserLocalProperties
 import javax.inject.Inject
@@ -32,12 +31,12 @@ class SettingsRepositoryImpl
     override fun updateUserProperties(
         userId: Int,
         userLocalProperties: UserLocalProperties
-    ): Either<Failure, SettingsUpdate> {
+    ): Either<Failure, SettingsUpdateEntity> {
         return when (networkHandler.isConnected) {
             true -> request(
                 service.updateUserProperties(userId, userLocalProperties),
                 { settingsUpdateEntity -> settingsUpdateEntity.toSettingsUpdate() },
-                SettingsUpdateEntity.empty()
+                SettingsUpdate.empty()
             )
             false, null -> Either.Left(
                 Failure.NetworkConnection

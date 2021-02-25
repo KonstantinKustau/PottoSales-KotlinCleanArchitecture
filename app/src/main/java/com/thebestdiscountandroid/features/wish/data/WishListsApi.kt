@@ -1,8 +1,6 @@
 package com.thebestdiscountandroid.features.wish.data
 
 import com.thebestdiscountandroid.features.wish.domain.WishListCategory
-import com.thebestdiscountandroid.features.wish.domain.WishListCategoryEntity
-import com.thebestdiscountandroid.features.wish.domain.WishListUpdateEntity
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.PUT
@@ -28,5 +26,5 @@ internal interface WishListsApi {
         @Query(PARAM_USER_ID) userId: Int,
         @Query(PARAM_UPDATE_TYPE) updateType: String,
         @Query(PARAM_UPDATE_DATA) updateData: List<WishListCategory>
-    ): Call<WishListUpdateEntity>
+    ): Call<WishListUpdate>
 }

@@ -7,10 +7,10 @@ import javax.inject.Inject
 
 class GetShopsByProduct
 @Inject constructor(private val chooseShopRepository: ChooseShopRepository) :
-    UseCase<List<Shop>, GetShopsByProduct.Params>() {
+    UseCase<List<ShopEntity>, GetShopsByProduct.Params>() {
 
     data class Params(val productId: Int)
 
-    override suspend fun run(params: Params): Either<Failure, List<Shop>> =
+    override suspend fun run(params: Params): Either<Failure, List<ShopEntity>> =
         chooseShopRepository.getShopsByProduct(params.productId)
 }

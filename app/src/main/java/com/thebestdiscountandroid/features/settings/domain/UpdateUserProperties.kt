@@ -7,10 +7,10 @@ import javax.inject.Inject
 
 class UpdateUserProperties
 @Inject constructor(private val settingsRepository: SettingsRepository) :
-    UseCase<SettingsUpdate, UpdateUserProperties.Params>() {
+    UseCase<SettingsUpdateEntity, UpdateUserProperties.Params>() {
 
     data class Params(val userId: Int, val userLocalProperties: UserLocalProperties)
 
-    override suspend fun run(params: Params): Either<Failure, SettingsUpdate> =
+    override suspend fun run(params: Params): Either<Failure, SettingsUpdateEntity> =
         settingsRepository.updateUserProperties(params.userId, params.userLocalProperties)
 }

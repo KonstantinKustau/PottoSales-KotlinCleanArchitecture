@@ -11,6 +11,6 @@ interface WishListsRepository {
         userId: Int,
         updateType: String,
         updateData: List<WishListCategory>
-    ): Either<Failure, WishListUpdate>
+    ): Either<Failure, WishListUpdateEntity>
 
 }

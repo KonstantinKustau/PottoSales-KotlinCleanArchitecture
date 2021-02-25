@@ -4,7 +4,7 @@ import com.thebestdiscountandroid.core.exception.Failure
 import com.thebestdiscountandroid.core.functional.Either
 import com.thebestdiscountandroid.core.platform.BaseNetwork
 import com.thebestdiscountandroid.core.platform.NetworkHandler
-import com.thebestdiscountandroid.features.deals.domain.Deal
+import com.thebestdiscountandroid.features.deals.domain.DealEntity
 import com.thebestdiscountandroid.features.deals.domain.DealsRepository
 import javax.inject.Inject
 
@@ -14,7 +14,7 @@ class DealsRepositoryImpl
     private val service: DealsService
 ) : DealsRepository, BaseNetwork() {
 
-    override fun getTopDeals(userId: Int): Either<Failure, List<Deal>> {
+    override fun getTopDeals(userId: Int): Either<Failure, List<DealEntity>> {
         return when (networkHandler.isConnected) {
             true -> request(
                 service.getTopDeals(userId),
@@ -30,7 +30,7 @@ class DealsRepositoryImpl
     override fun filterProductByName(
         userId: Int,
         productName: String
-    ): Either<Failure, List<Deal>> {
+    ): Either<Failure, List<DealEntity>> {
         return when (networkHandler.isConnected) {
             true -> request(
                 service.filterProductByName(userId, productName),

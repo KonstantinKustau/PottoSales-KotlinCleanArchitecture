@@ -6,7 +6,7 @@ import com.thebestdiscountandroid.R
 import com.thebestdiscountandroid.core.platform.BaseViewModel
 import com.thebestdiscountandroid.features.login.domain.GetSingInResult
 import com.thebestdiscountandroid.features.login.domain.GetSignUpResult
-import com.thebestdiscountandroid.features.login.domain.UserLoginProperties
+import com.thebestdiscountandroid.features.login.domain.UserLoginPropertiesEntity
 import java.util.regex.Pattern
 import javax.inject.Inject
 
@@ -17,12 +17,12 @@ class LoginViewModel
 ) : BaseViewModel() {
 
     val loginForm: MutableLiveData<LoginFormState> = MutableLiveData()
-    var userLoginPropertiesResult: MutableLiveData<UserLoginProperties> = MutableLiveData()
+    var userLoginPropertiesResult: MutableLiveData<UserLoginPropertiesEntity> = MutableLiveData()
 
     fun signIn(email: String, password: String) {
         //TODO mock data
         handleUserProperties(
-            UserLoginProperties(1, email, password, "", "", "")
+            UserLoginPropertiesEntity(1, email, password, "", "", "")
         )
 
 //        getSignInResult(UseCase.None()) { it.fold(::handleFailure, ::handleLogin) }
@@ -31,13 +31,13 @@ class LoginViewModel
     fun signUp(email: String, password: String) {
         //TODO mock data
         handleUserProperties(
-            UserLoginProperties(1, email, password, "", "", "")
+            UserLoginPropertiesEntity(1, email, password, "", "", "")
         )
 
 //        getSignUpResult(UseCase.None()) { it.fold(::handleFailure, ::handleLogin) }
     }
 
-    private fun handleUserProperties(userLoginPropertiesData: UserLoginProperties) {
+    private fun handleUserProperties(userLoginPropertiesData: UserLoginPropertiesEntity) {
         this.userLoginPropertiesResult.value = userLoginPropertiesData
     }
 

@@ -10,6 +10,6 @@ interface SettingsRepository {
     fun updateUserProperties(
         userId: Int,
         userLocalProperties: UserLocalProperties
-    ): Either<Failure, SettingsUpdate>
+    ): Either<Failure, SettingsUpdateEntity>
 
 }

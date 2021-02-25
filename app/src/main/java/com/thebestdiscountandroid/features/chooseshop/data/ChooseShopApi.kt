@@ -1,7 +1,5 @@
 package com.thebestdiscountandroid.features.chooseshop.data
 
-import com.thebestdiscountandroid.features.chooseshop.domain.ProductLimitEntity
-import com.thebestdiscountandroid.features.chooseshop.domain.ShopEntity
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.POST
@@ -20,7 +18,7 @@ internal interface ChooseShopApi {
     @GET(GET_SHOPS_BY_PRODUCT)
     fun getShopsByProduct(
         @Query(PARAM_PRODUCT_NAME) productId: Int
-    ): Call<List<ShopEntity>>
+    ): Call<List<Shop>>
 
     @POST(SET_LIMIT_ON_USER_PRODUCT)
     fun setLimitOnUserProduct(
@@ -32,5 +30,5 @@ internal interface ChooseShopApi {
     @GET(GET_LIMITS_ON_USER)
     fun getLimitsOnUser(
         @Query(PARAM_USER_ID) userId: Int
-    ): Call<List<ProductLimitEntity>>
+    ): Call<List<ProductLimit>>
 }

@@ -2,7 +2,7 @@ package com.thebestdiscountandroid.features.deals.presentative
 
 import androidx.lifecycle.MutableLiveData
 import com.thebestdiscountandroid.core.platform.BaseViewModel
-import com.thebestdiscountandroid.features.deals.domain.Deal
+import com.thebestdiscountandroid.features.deals.domain.DealEntity
 import com.thebestdiscountandroid.features.deals.domain.GetTopDeals
 import com.thebestdiscountandroid.features.deals.presentative.DealsFragment.Companion.DEALS_HEADER
 import com.thebestdiscountandroid.features.deals.presentative.recyclerview.DealHeaderView
@@ -25,7 +25,7 @@ class DealsViewModel
         }
     }
 
-    private fun handleDeals(deals: List<Deal>) {
+    private fun handleDeals(deals: List<DealEntity>) {
         val dealsAdapterList: ArrayList<DealView> = arrayListOf()
         dealsAdapterList.add(DealHeaderView(DEALS_HEADER))
         deals.map {

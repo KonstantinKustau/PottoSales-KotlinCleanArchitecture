@@ -7,10 +7,10 @@ import javax.inject.Inject
 
 class FilterProductByName
 @Inject constructor(private val dealsRepository: DealsRepository) :
-    UseCase<List<Deal>, FilterProductByName.Params>() {
+    UseCase<List<DealEntity>, FilterProductByName.Params>() {
 
     data class Params(val userId: Int, val productName: String)
 
-    override suspend fun run(params: Params): Either<Failure, List<Deal>> =
+    override suspend fun run(params: Params): Either<Failure, List<DealEntity>> =
         dealsRepository.filterProductByName(params.userId, params.productName)
 }

@@ -81,7 +81,7 @@ class WishListsViewModel
         this.wishLists.value = wishViewAdapterList
     }
 
-    private fun wishListUpdated(wishListUpdate: WishListUpdate) {
+    private fun wishListUpdated(wishListUpdate: WishListUpdateEntity) {
         this.wishListsUpdate.value = wishListUpdate.isUpdated
     }
 }

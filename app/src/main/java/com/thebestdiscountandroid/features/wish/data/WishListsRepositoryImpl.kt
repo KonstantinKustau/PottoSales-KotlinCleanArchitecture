@@ -5,7 +5,6 @@ import com.thebestdiscountandroid.core.functional.Either
 import com.thebestdiscountandroid.core.platform.BaseNetwork
 import com.thebestdiscountandroid.core.platform.NetworkHandler
 import com.thebestdiscountandroid.features.wish.domain.WishListCategory
-import com.thebestdiscountandroid.features.wish.domain.WishListUpdate
 import com.thebestdiscountandroid.features.wish.domain.WishListUpdateEntity
 import com.thebestdiscountandroid.features.wish.domain.WishListsRepository
 import javax.inject.Inject
@@ -33,12 +32,12 @@ class WishListsRepositoryImpl
         userId: Int,
         updateType: String,
         updateData: List<WishListCategory>
-    ): Either<Failure, WishListUpdate> {
+    ): Either<Failure, WishListUpdateEntity> {
         return when (networkHandler.isConnected) {
             true -> request(
                 service.updateWishLists(userId, updateType, updateData),
                 { wishListUpdateEntity -> wishListUpdateEntity.toWishListUpdate() },
-                WishListUpdateEntity.empty()
+                WishListUpdate.empty()
             )
             false, null -> Either.Left(
                 Failure.NetworkConnection

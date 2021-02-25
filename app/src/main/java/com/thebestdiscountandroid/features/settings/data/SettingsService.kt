@@ -1,7 +1,5 @@
 package com.thebestdiscountandroid.features.settings.data
 
-import com.thebestdiscountandroid.features.login.domain.UserLoginProperties
-import com.thebestdiscountandroid.features.settings.domain.SettingsUpdateEntity
 import com.thebestdiscountandroid.features.settings.domain.UserLocalProperties
 import retrofit2.Call
 import retrofit2.Retrofit
@@ -18,5 +16,5 @@ class SettingsService
     override fun updateUserProperties(
         userId: Int,
         userLocalProperties: UserLocalProperties
-    ): Call<SettingsUpdateEntity> = settingsApi.updateUserProperties(userId, userLocalProperties)
+    ): Call<SettingsUpdate> = settingsApi.updateUserProperties(userId, userLocalProperties)
 }

@@ -8,7 +8,7 @@ import javax.inject.Inject
 
 class UpdateWishLists
 @Inject constructor(private val wishListsRepository: WishListsRepository) :
-    UseCase<WishListUpdate, Params>() {
+    UseCase<WishListUpdateEntity, Params>() {
 
     data class Params(
         val userId: Int,
@@ -16,6 +16,6 @@ class UpdateWishLists
         val updateData: List<WishListCategory>
     )
 
-    override suspend fun run(params: Params): Either<Failure, WishListUpdate> =
+    override suspend fun run(params: Params): Either<Failure, WishListUpdateEntity> =
         wishListsRepository.updateWishLists(params.userId, params.updateType, params.updateData)
 }

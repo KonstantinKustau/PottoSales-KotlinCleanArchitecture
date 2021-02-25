@@ -10,7 +10,7 @@ import com.thebestdiscountandroid.core.extension.*
 import com.thebestdiscountandroid.core.navigation.Navigator
 import com.thebestdiscountandroid.core.platform.BaseFragment
 import com.thebestdiscountandroid.core.storage.PreferencesStorage
-import com.thebestdiscountandroid.features.login.domain.UserLoginProperties
+import com.thebestdiscountandroid.features.login.domain.UserLoginPropertiesEntity
 import kotlinx.android.synthetic.main.login_fragment.email
 import kotlinx.android.synthetic.main.login_fragment.password
 import kotlinx.android.synthetic.main.login_fragment.signIn
@@ -71,7 +71,7 @@ class LoginFragment : BaseFragment() {
         }
     }
 
-    private fun loginSuccess(userLoginProperties: UserLoginProperties?) {
+    private fun loginSuccess(userLoginProperties: UserLoginPropertiesEntity?) {
         //TODO preference setUserId
         //TODO cache userProperties
 //        if (loginData != null) {

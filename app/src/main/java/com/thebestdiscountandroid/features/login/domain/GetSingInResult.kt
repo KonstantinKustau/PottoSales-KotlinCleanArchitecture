@@ -7,10 +7,10 @@ import javax.inject.Inject
 
 class GetSingInResult
 @Inject constructor(private val loginRepository: LoginRepository) :
-    UseCase<UserLoginProperties, GetSingInResult.Params>() {
+    UseCase<UserLoginPropertiesEntity, GetSingInResult.Params>() {
 
     data class Params(val email: String, val password: String)
 
-    override suspend fun run(params: Params): Either<Failure, UserLoginProperties> =
+    override suspend fun run(params: Params): Either<Failure, UserLoginPropertiesEntity> =
         loginRepository.signIn(params.email, params.password)
 }

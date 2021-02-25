@@ -7,11 +7,11 @@ import javax.inject.Inject
 
 class GetLimitsOnUser
 @Inject constructor(private val chooseShopRepository: ChooseShopRepository) :
-    UseCase<List<ProductLimit>, GetLimitsOnUser.Params>() {
+    UseCase<List<ProductLimitEntity>, GetLimitsOnUser.Params>() {
 
     data class Params(val userId: Int)
 
-    override suspend fun run(params: Params): Either<Failure, List<ProductLimit>> =
+    override suspend fun run(params: Params): Either<Failure, List<ProductLimitEntity>> =
         chooseShopRepository.getLimitsOnUser(params.userId)
 
 }

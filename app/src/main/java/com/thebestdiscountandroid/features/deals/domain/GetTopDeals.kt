@@ -7,11 +7,11 @@ import javax.inject.Inject
 
 class GetTopDeals
 @Inject constructor(private val dealsRepository: DealsRepository) :
-    UseCase<List<Deal>, GetTopDeals.Params>() {
+    UseCase<List<DealEntity>, GetTopDeals.Params>() {
 
     data class Params(val userId: Int)
 
-    override suspend fun run(params: Params): Either<Failure, List<Deal>> =
+    override suspend fun run(params: Params): Either<Failure, List<DealEntity>> =
         dealsRepository.getTopDeals(params.userId)
 
 }

@@ -3,14 +3,9 @@ package com.thebestdiscountandroid.features.settings.presentative
 import androidx.lifecycle.MutableLiveData
 import com.thebestdiscountandroid.core.platform.BaseViewModel
 import com.thebestdiscountandroid.features.settings.domain.GetLogoutResult
-import com.thebestdiscountandroid.features.settings.domain.SettingsUpdate
+import com.thebestdiscountandroid.features.settings.domain.SettingsUpdateEntity
 import com.thebestdiscountandroid.features.settings.domain.UpdateUserProperties
 import com.thebestdiscountandroid.features.settings.domain.UserLocalProperties
-import com.thebestdiscountandroid.features.wish.domain.WishListCategory
-import com.thebestdiscountandroid.features.wish.domain.WishListUpdate
-import com.thebestdiscountandroid.features.wish.presentation.expandablerecyclerview.WishCategoryView
-import com.thebestdiscountandroid.features.wish.presentation.expandablerecyclerview.WishProductView
-import com.thebestdiscountandroid.features.wish.presentation.expandablerecyclerview.WishView
 import javax.inject.Inject
 
 class SettingsViewModel
@@ -19,7 +14,7 @@ class SettingsViewModel
     private val updateUserProperties: UpdateUserProperties
 ) : BaseViewModel() {
 
-    var userProperties: MutableLiveData<SettingsUpdate> = MutableLiveData()
+    var userProperties: MutableLiveData<SettingsUpdateEntity> = MutableLiveData()
 
     var logoutResult: MutableLiveData<Any> = MutableLiveData()
 
@@ -41,7 +36,7 @@ class SettingsViewModel
         }
     }
 
-    private fun handleUpdateUserProperties(settingsUpdate: SettingsUpdate) {
+    private fun handleUpdateUserProperties(settingsUpdate: SettingsUpdateEntity) {
         this.userProperties.value = settingsUpdate
     }
 

@@ -5,8 +5,8 @@ import com.thebestdiscountandroid.core.functional.Either
 
 interface LoginRepository {
 
-    fun signIn(email: String, password: String): Either<Failure, UserLoginProperties>
+    fun signIn(email: String, password: String): Either<Failure, UserLoginPropertiesEntity>
 
-    fun signUp(email: String, password: String): Either<Failure, UserLoginProperties>
+    fun signUp(email: String, password: String): Either<Failure, UserLoginPropertiesEntity>
 
 }

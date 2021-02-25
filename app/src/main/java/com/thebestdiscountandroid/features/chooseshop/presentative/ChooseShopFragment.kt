@@ -7,7 +7,6 @@ import android.view.MenuItem
 import android.view.View
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.thebestdiscountandroid.R
 import com.thebestdiscountandroid.core.exception.Failure
@@ -15,7 +14,7 @@ import com.thebestdiscountandroid.core.extension.*
 import com.thebestdiscountandroid.core.navigation.Navigator
 import com.thebestdiscountandroid.core.platform.BaseFragment
 import com.thebestdiscountandroid.core.storage.PreferencesStorage
-import com.thebestdiscountandroid.features.chooseshop.domain.ProductLimit
+import com.thebestdiscountandroid.features.chooseshop.domain.ProductLimitEntity
 import com.thebestdiscountandroid.features.chooseshop.presentative.recyclerview.ChooseShopAdapter
 import com.thebestdiscountandroid.features.chooseshop.presentative.recyclerview.ShopHeaderView
 import com.thebestdiscountandroid.features.chooseshop.presentative.recyclerview.ShopItemView
@@ -155,7 +154,7 @@ class ChooseShopFragment : BaseFragment() {
         hideProgress()
     }
 
-    private fun renderLimit(limit: ProductLimit?) {
+    private fun renderLimit(limit: ProductLimitEntity?) {
         if (limit != null) {
             chooseShopAdapter.collection[0] = ShopHeaderView(limit.limit)
         } else {
