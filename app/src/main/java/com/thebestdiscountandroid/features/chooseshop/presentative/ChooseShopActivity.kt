@@ -16,6 +16,7 @@ class ChooseShopActivity : BaseActivity() {
             val intent = Intent(context, ChooseShopActivity::class.java)
             intent.putExtra(INTENT_EXTRA_PARAM_PRODUCT_ID, productId)
             intent.putExtra(INTENT_EXTRA_PARAM_PRODUCT_NAME, productName)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK;
             return intent
         }
     }
