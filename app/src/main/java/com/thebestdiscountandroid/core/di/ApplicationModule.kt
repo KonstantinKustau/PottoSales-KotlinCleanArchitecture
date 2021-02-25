@@ -4,10 +4,15 @@ import android.content.Context
 import com.thebestdiscountandroid.AndroidApplication
 import com.thebestdiscountandroid.BuildConfig
 import com.thebestdiscountandroid.core.platform.MockInterceptor
+import com.thebestdiscountandroid.features.chooseshop.data.ChooseShopRepositoryImpl
 import com.thebestdiscountandroid.features.chooseshop.domain.ChooseShopRepository
+import com.thebestdiscountandroid.features.deals.data.DealsRepositoryImpl
 import com.thebestdiscountandroid.features.deals.domain.DealsRepository
+import com.thebestdiscountandroid.features.login.data.LoginRepositoryImpl
 import com.thebestdiscountandroid.features.login.domain.LoginRepository
 import com.thebestdiscountandroid.features.settings.domain.SettingsRepository
+import com.thebestdiscountandroid.features.settings.data.SettingsRepositoryImpl
+import com.thebestdiscountandroid.features.wish.data.WishListsRepositoryImpl
 import com.thebestdiscountandroid.features.wish.domain.WishListsRepository
 import dagger.Module
 import dagger.Provides
@@ -59,25 +64,25 @@ class ApplicationModule(private val application: AndroidApplication) {
 
     @Provides
     @Singleton
-    fun provideLoginRepository(dataSource: LoginRepository.Network): LoginRepository = dataSource
+    fun provideLoginRepository(dataSource: LoginRepositoryImpl): LoginRepository = dataSource
 
     @Provides
     @Singleton
-    fun provideWishListRepository(dataSource: WishListsRepository.Network): WishListsRepository =
+    fun provideWishListRepository(dataSource: WishListsRepositoryImpl): WishListsRepository =
         dataSource
 
     @Provides
     @Singleton
-    fun provideSettingsRepository(dataSource: SettingsRepository.Network): SettingsRepository =
+    fun provideSettingsRepository(dataSource: SettingsRepositoryImpl): SettingsRepository =
         dataSource
 
     @Provides
     @Singleton
-    fun provideChooseShopRepository(dataSource: ChooseShopRepository.Network): ChooseShopRepository =
+    fun provideChooseShopRepository(dataSource: ChooseShopRepositoryImpl): ChooseShopRepository =
         dataSource
 
     @Provides
     @Singleton
-    fun provideDealsRepository(dataSource: DealsRepository.Network): DealsRepository =
+    fun provideDealsRepository(dataSource: DealsRepositoryImpl): DealsRepository =
         dataSource
 }
