@@ -8,13 +8,19 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.thebestdiscountandroid.R
 import com.thebestdiscountandroid.core.platform.BaseFragment
+import com.thebestdiscountandroid.features.chooseshop.presentative.ChooseShopActivity
 import kotlinx.android.synthetic.main.settings_activity.*
 import kotlinx.android.synthetic.main.settings_content.*
 
 class SettingsActivity : AppCompatActivity() {
 
     companion object {
-        fun callingIntent(context: Context) = Intent(context, SettingsActivity::class.java)
+
+        fun callingIntent(context: Context): Intent {
+            val intent = Intent(context, SettingsActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK;
+            return intent
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -110,16 +110,17 @@ class ChooseShopFragment : BaseFragment() {
         shopsRecyclerView.adapter = chooseShopAdapter
         chooseShopAdapter.selectedColor = context?.getColor(R.color.colorSelectedTransparent) ?: 0
         chooseShopAdapter.shortClickListener = {
-            if (it is ShopItemView) {
-                chooseShopAdapter.selectShop(it)
-                if (chooseShopAdapter.areThereSelectedItems()) {
-                    changeOptionsMenuView(true)
-                } else {
-                    changeOptionsMenuView(false)
-                }
-            } else if (it is ShopHeaderView) {
-                setLimitDialog()
-            }
+            //TODO implement it
+//            if (it is ShopItemView) {
+//                chooseShopAdapter.selectShop(it)
+//                if (chooseShopAdapter.areThereSelectedItems()) {
+//                    changeOptionsMenuView(true)
+//                } else {
+//                    changeOptionsMenuView(false)
+//                }
+//            } else if (it is ShopHeaderView) {
+//                setLimitDialog()
+//            }
         }
         chooseShopAdapter.longClickListener = {}
     }

@@ -3,18 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/actionLimit"
-        android:icon="@drawable/ic_trending_down_24"
+        android:id="@+id/actionSearch"
+        android:icon="@drawable/ic_search_24dp"
         android:orderInCategory="100"
-        android:title="@string/limit"
+        android:title="@string/search"
+        app:actionViewClass="android.widget.SearchView"
         app:showAsAction="always" />
 
     <item
-        android:id="@+id/actionSearch"
-        android:icon="@drawable/ic_search_24dp"
+        android:id="@+id/actionLimit"
+        android:icon="@drawable/ic_trending_down_24"
         android:orderInCategory="200"
-        android:title="@string/search"
-        app:actionViewClass="android.widget.SearchView"
+        android:title="@string/limit"
         app:showAsAction="always" />
 
     <item
